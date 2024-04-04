@@ -15,6 +15,12 @@
             height: 100vh;
             margin: 0;
         }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         .resultado {
             background-color: black;
             border-radius: 5px;
@@ -24,11 +30,29 @@
             font-size: 24px;
             text-align: center;
         }
+        #candado{
+            background-color:rgb(44, 217, 25);
+            height: 50px;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+        #mensajeOculto{
+            padding: 50px;
+            border-radius: 5px;
+            color: yellow;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            order: -1;
+        }
     </style>
 </head>
 <body>
-    <div class="main">
-        <div class="resultado"></div>
+    <div class="container">
+        <div id="mensajeOculto"></div>
+        <div class="main">
+            <div class="resultado"></div>
+        </div>
+        <img id="candado" src="./Imagenes/cerrado.png">
     </div>
 </body>
 </html>
